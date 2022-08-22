@@ -9,6 +9,7 @@ return require("packer").startup(function(use)
 
     -- Theme/Visual
     use "folke/tokyonight.nvim"
+    use "gruvbox-community/gruvbox"
     use "rcarriga/nvim-notify"
 
     -- useful
@@ -24,7 +25,7 @@ return require("packer").startup(function(use)
     use "hrsh7th/nvim-cmp"
     use {"tzachar/cmp-tabnine", after = "nvim-cmp", run="powershell ./install.ps1", requires = "hrsh7th/nvim-cmp"}
 
-    use "williamboman/nvim-lsp-installer"
+    -- use "williamboman/nvim-lsp-installer"
     use "onsails/lspkind-nvim"
 
     use "glepnir/lspsaga.nvim"
@@ -35,6 +36,7 @@ return require("packer").startup(function(use)
     use {"nvim-treesitter/nvim-treesitter", run = ":TSUpdate"}
     use "nvim-treesitter/playground"
     use "romgrk/nvim-treesitter-context"
+
     use "mfussenegger/nvim-dap"
     use "rcarriga/nvim-dap-ui"
     use "theHamsta/nvim-dap-virtual-text"

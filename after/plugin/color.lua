@@ -1,5 +1,5 @@
 notify = require('notify')
-vim.g.brasil_colorscheme = "tokyonight"
+vim.g.brasil_colorscheme = "gruvbox"
 
 function ColorMyPencils()
     vim.g.gruvbox_contrast_dark = 'hard'

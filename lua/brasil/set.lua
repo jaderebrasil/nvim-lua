@@ -2,6 +2,10 @@ vim.opt.guicursor = ""
 vim.o.clipboard = "unnamedplus"
 vim.g.mapleader = " "
 
+
+vim.opt.termguicolors = true
+vim.opt.errorbells = false
+
 -- number
 vim.opt.nu = true
 vim.opt.relativenumber = true

@@ -108,6 +108,11 @@ _G.packer_plugins = {
     path = "D:\\ProgramData\\nvim-data\\site\\pack\\packer\\start\\galaxyline.nvim",
     url = "https://github.com/glepnir/galaxyline.nvim"
   },
+  gruvbox = {
+    loaded = true,
+    path = "D:\\ProgramData\\nvim-data\\site\\pack\\packer\\start\\gruvbox",
+    url = "https://github.com/gruvbox-community/gruvbox"
+  },
   ["lspkind-nvim"] = {
     loaded = true,
     path = "D:\\ProgramData\\nvim-data\\site\\pack\\packer\\start\\lspkind-nvim",
@@ -142,11 +147,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "D:\\ProgramData\\nvim-data\\site\\pack\\packer\\start\\nvim-dap-virtual-text",
     url = "https://github.com/theHamsta/nvim-dap-virtual-text"
-  },
-  ["nvim-lsp-installer"] = {
-    loaded = true,
-    path = "D:\\ProgramData\\nvim-data\\site\\pack\\packer\\start\\nvim-lsp-installer",
-    url = "https://github.com/williamboman/nvim-lsp-installer"
   },
   ["nvim-lspconfig"] = {
     loaded = true,

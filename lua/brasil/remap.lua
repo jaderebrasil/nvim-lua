@@ -5,7 +5,7 @@ nnoremap("<leader>pv", ":Ex<CR>")
 
 -- Source source and open
 nnoremap("<leader>ss", ":lua ReloadConfig()<CR>")
-nnoremap("<leader>so", ":echo $MYVIMRC<CR>")
+nnoremap("<leader>so", ":e $MYVIMRC<CR>")
 
 -- Tabs
 -- Go to tab by number

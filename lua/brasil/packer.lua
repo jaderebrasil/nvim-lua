@@ -41,6 +41,9 @@ return require("packer").startup(function(use)
     use "rcarriga/nvim-dap-ui"
     use "theHamsta/nvim-dap-virtual-text"
 
+    -- Data Science
+    use { "dccsillag/magma-nvim", run = ":UpdateRemotePlugins" }
+
     -- Use specific branch, dependency and run lua file after load
 	use {
         "glepnir/galaxyline.nvim",

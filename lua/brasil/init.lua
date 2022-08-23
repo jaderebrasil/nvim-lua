@@ -4,3 +4,6 @@ require("brasil.remap")
 
 -- Automatically delete all trailing whitespace
 require("brasil.autoremspaces")
+
+-- My plugins
+require("brasil.jupyter")

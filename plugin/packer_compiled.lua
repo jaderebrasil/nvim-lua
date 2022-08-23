@@ -123,6 +123,11 @@ _G.packer_plugins = {
     path = "D:\\ProgramData\\nvim-data\\site\\pack\\packer\\start\\lspsaga.nvim",
     url = "https://github.com/glepnir/lspsaga.nvim"
   },
+  ["magma-nvim"] = {
+    loaded = true,
+    path = "D:\\ProgramData\\nvim-data\\site\\pack\\packer\\start\\magma-nvim",
+    url = "https://github.com/dccsillag/magma-nvim"
+  },
   neoformat = {
     loaded = true,
     path = "D:\\ProgramData\\nvim-data\\site\\pack\\packer\\start\\neoformat",

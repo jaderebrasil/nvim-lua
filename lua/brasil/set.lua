@@ -1,6 +1,8 @@
 vim.opt.guicursor = ""
 vim.o.clipboard = "unnamedplus"
+vim.o.mouse = "a"
 vim.g.mapleader = " "
+vim.g.maplocalleader = ","
 
 
 vim.opt.termguicolors = true

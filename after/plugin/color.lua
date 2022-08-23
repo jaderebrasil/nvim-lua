@@ -1,4 +1,4 @@
-notify = require('notify')
+local notify = require('notify')
 vim.g.brasil_colorscheme = "gruvbox"
 
 function ColorMyPencils()

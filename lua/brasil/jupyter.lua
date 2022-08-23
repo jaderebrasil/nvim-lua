@@ -7,11 +7,13 @@ local xnoremap = Remap.xnoremap
 -- Magma
 local opts = {noremap = true, silent = true}
 nnoremap("<LocalLeader>mi", ":MagmaInit python3<CR>", opts)
-nnoremap("<LocalLeader>r" , ":MagmaEvaluateOperator<CR>", opts)
-nnoremap("<LocalLeader>rr", ":MagmaEvaluateLine<CR>", opts)
-nnoremap("<LocalLeader>rc", ":MagmaReevaluateCell<CR>", opts)
-nnoremap("<LocalLeader>rd", ":MagmaDelete<CR>", opts)
-nnoremap("<LocalLeader>ro", ":MagmaShowOutput<CR>", opts)
-xnoremap("<LocalLeader>r" , ":<C-u>MagmaEvaluateVisual<CR>", opts)
+
+nnoremap("<LocalLeader>mr", ":MagmaEvaluateLine<CR>", opts)
+xnoremap("<LocalLeader>mr" , ":<C-u>MagmaEvaluateVisual<CR>", opts)
+
+nnoremap("<LocalLeader>mc", ":MagmaReevaluateCell<CR>", opts)
+nnoremap("<LocalLeader>md", ":MagmaDelete<CR>", opts)
+nnoremap("<LocalLeader>ms", ":MagmaShowOutput<CR>", opts)
+nnoremap("<LocalLeader>mo", ":MagmaEvaluateOperator<CR>", opts)
 
 vim.g.magma_automatically_open_output = false

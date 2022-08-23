@@ -12,6 +12,14 @@ return require("packer").startup(function(use)
     use "gruvbox-community/gruvbox"
     use "rcarriga/nvim-notify"
 
+    use {
+      "folke/which-key.nvim",
+      config = function()
+        require("which-key").setup {
+        }
+      end
+    }
+
     -- useful
     use "sbdchd/neoformat"
     use "nvim-telescope/telescope.nvim"

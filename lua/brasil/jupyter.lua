@@ -12,6 +12,8 @@ nnoremap("<LocalLeader>mr", ":MagmaEvaluateLine<CR>", opts)
 xnoremap("<LocalLeader>mr" , ":<C-u>MagmaEvaluateVisual<CR>", opts)
 
 nnoremap("<LocalLeader>mc", ":MagmaReevaluateCell<CR>", opts)
+xnoremap("<LocalLeader>mc" , ":<C-u>MagmaEvaluateVisual<CR>", opts)
+
 nnoremap("<LocalLeader>md", ":MagmaDelete<CR>", opts)
 nnoremap("<LocalLeader>ms", ":MagmaShowOutput<CR>", opts)
 nnoremap("<LocalLeader>mo", ":MagmaEvaluateOperator<CR>", opts)

@@ -1,4 +1,3 @@
-vim.opt.guicursor = ""
 vim.o.clipboard = "unnamedplus"
 vim.o.mouse = "a"
 vim.g.mapleader = " "

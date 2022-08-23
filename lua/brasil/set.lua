@@ -3,9 +3,12 @@ vim.o.mouse = "a"
 vim.g.mapleader = " "
 vim.g.maplocalleader = ","
 
-
 vim.opt.termguicolors = true
 vim.opt.errorbells = false
+
+-- encoding
+vim.o.encoding = "utf-8"
+vim.o.ff = "unix"
 
 -- number
 vim.opt.nu = true

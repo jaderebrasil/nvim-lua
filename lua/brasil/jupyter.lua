@@ -2,7 +2,9 @@ local Remap = require("brasil.utils.keymap")
 local nnoremap = Remap.nnoremap
 local xnoremap = Remap.xnoremap
 
--- TODO: jupyter_ascending bindings
+-- jupyter_ascending
+nnoremap("<LocalLeader>jr", ":call jupyter_ascending#execute()<CR>")
+nnoremap("<LocalLeader>ja", ":call jupyter_ascending#execute_all()<CR>")
 
 -- Magma
 local opts = {noremap = true, silent = true}

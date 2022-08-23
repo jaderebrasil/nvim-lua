@@ -110,6 +110,11 @@ _G.packer_plugins = {
     path = "/home/jarch/.local/share/nvim/site/pack/packer/start/gruvbox",
     url = "https://github.com/gruvbox-community/gruvbox"
   },
+  ["jupyter_ascending.vim"] = {
+    loaded = true,
+    path = "/home/jarch/.local/share/nvim/site/pack/packer/start/jupyter_ascending.vim",
+    url = "https://github.com/untitled-ai/jupyter_ascending.vim"
+  },
   ["lspkind-nvim"] = {
     loaded = true,
     path = "/home/jarch/.local/share/nvim/site/pack/packer/start/lspkind-nvim",

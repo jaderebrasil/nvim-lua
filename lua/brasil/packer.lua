@@ -56,6 +56,7 @@ return require("packer").startup(function(use)
 
     -- Data Science
     use { "dccsillag/magma-nvim", run = ":UpdateRemotePlugins" }
+    use "untitled-ai/jupyter_ascending.vim"
 
     -- Use specific branch, dependency and run lua file after load
 	use {

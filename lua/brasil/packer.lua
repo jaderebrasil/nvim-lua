@@ -54,6 +54,9 @@ return require("packer").startup(function(use)
     use "rcarriga/nvim-dap-ui"
     use "theHamsta/nvim-dap-virtual-text"
 
+    -- math
+    use "lervag/vimtex"
+
     -- Data Science
     use { "dccsillag/magma-nvim", run = ":UpdateRemotePlugins" }
     use "JuliaEditorSupport/julia-vim"

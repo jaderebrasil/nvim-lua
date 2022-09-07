@@ -26,3 +26,12 @@ vim.opt.wrap = false
 -- search
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
+
+-- vimtex stuff
+vim.g.vimtex_view_general_viewer = 'SumatraPDF'
+vim.g.vimtex_view_general_options = '-reuse-instance -forward-search @tex @line @pdf'
+
+-- python stuff
+vim.g.autopep8_on_save = 1
+vim.g.autopep8_diff_type = 'vertical'
+vim.g.autopep8_disable_show_diff = 1

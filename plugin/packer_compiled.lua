@@ -100,11 +100,8 @@ _G.packer_plugins = {
     url = "https://github.com/hrsh7th/cmp-path"
   },
   ["cmp-tabnine"] = {
-    after_files = { "D:\\ProgramData\\nvim-data\\site\\pack\\packer\\opt\\cmp-tabnine\\after\\plugin\\cmp-tabnine.lua" },
-    load_after = {},
     loaded = true,
-    needs_bufread = false,
-    path = "D:\\ProgramData\\nvim-data\\site\\pack\\packer\\opt\\cmp-tabnine",
+    path = "D:\\ProgramData\\nvim-data\\site\\pack\\packer\\start\\cmp-tabnine",
     url = "https://github.com/tzachar/cmp-tabnine"
   },
   cmp_luasnip = {
@@ -127,6 +124,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "D:\\ProgramData\\nvim-data\\site\\pack\\packer\\start\\julia-vim",
     url = "https://github.com/JuliaEditorSupport/julia-vim"
+  },
+  ["jupyter_ascending.vim"] = {
+    loaded = true,
+    path = "D:\\ProgramData\\nvim-data\\site\\pack\\packer\\start\\jupyter_ascending.vim",
+    url = "https://github.com/untitled-ai/jupyter_ascending.vim"
   },
   ["lspkind-nvim"] = {
     loaded = true,
@@ -219,11 +221,6 @@ _G.packer_plugins = {
     path = "D:\\ProgramData\\nvim-data\\site\\pack\\packer\\start\\telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
-  ["tokyonight.nvim"] = {
-    loaded = true,
-    path = "D:\\ProgramData\\nvim-data\\site\\pack\\packer\\start\\tokyonight.nvim",
-    url = "https://github.com/folke/tokyonight.nvim"
-  },
   undotree = {
     loaded = true,
     path = "D:\\ProgramData\\nvim-data\\site\\pack\\packer\\start\\undotree",
@@ -246,11 +243,6 @@ time([[Config for galaxyline.nvim]], false)
 time([[Config for which-key.nvim]], true)
 try_loadstring("\27LJ\2\n;\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\14which-key\frequire\0", "config", "which-key.nvim")
 time([[Config for which-key.nvim]], false)
--- Load plugins in order defined by `after`
-time([[Sequenced loading]], true)
-vim.cmd [[ packadd nvim-cmp ]]
-vim.cmd [[ packadd cmp-tabnine ]]
-time([[Sequenced loading]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

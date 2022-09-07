@@ -31,7 +31,12 @@ return require("packer").startup(function(use)
     use "hrsh7th/cmp-buffer"
     use "hrsh7th/cmp-path"
     use "hrsh7th/nvim-cmp"
-    use {"tzachar/cmp-tabnine", after = "nvim-cmp", run="powershell ./install.ps1", requires = "hrsh7th/nvim-cmp"}
+
+    if vim.fn.has('unix') then
+        use {'tzachar/cmp-tabnine', run='./install.sh', requires = 'hrsh7th/nvim-cmp'}
+    else
+        use {"tzachar/cmp-tabnine", after = "nvim-cmp", run="powershell ./install.ps1", requires = "hrsh7th/nvim-cmp"}
+    end
 
     -- use "williamboman/nvim-lsp-installer"
     use "onsails/lspkind-nvim"
@@ -53,6 +58,7 @@ return require("packer").startup(function(use)
     use { "dccsillag/magma-nvim", run = ":UpdateRemotePlugins" }
     use "JuliaEditorSupport/julia-vim"
     use "kdheepak/JuliaFormatter.vim"
+    use "untitled-ai/jupyter_ascending.vim"
 
     -- Use specific branch, dependency and run lua file after load
 	use {

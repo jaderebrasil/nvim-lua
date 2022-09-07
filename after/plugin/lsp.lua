@@ -115,8 +115,8 @@ end
 
 
 local lspconfig = require("lspconfig")
-local simple_servers = {"tsserver", "pylsp", "pyright"}
 
+local simple_servers = {"tsserver", "pylsp", "pyright", "julials"}
 for _, lsp in ipairs(simple_servers) do
     lspconfig[lsp].setup(config())
 end
@@ -131,6 +131,27 @@ require("lspconfig").gopls.setup(config({
 			staticcheck = true,
 		},
 	},
+}))
+
+require("lspconfig").rust_analyzer.setup(config({
+    settings = {
+        ["rust-analyzer"] = {
+            imports = {
+                granularity = {
+                    group = "module",
+                },
+                prefix = "self",
+            },
+            cargo = {
+                buildScripts = {
+                    enable = true,
+                },
+            },
+            procMacro = {
+                enable = true
+            },
+        }
+    }
 }))
 
 require("lspconfig").sumneko_lua.setup(config({

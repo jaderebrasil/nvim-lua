@@ -8,7 +8,7 @@ return require("packer").startup(function(use)
     use "nvim-lua/plenary.nvim"
 
     -- Theme/Visual
-    use "folke/tokyonight.nvim"
+    -- use "folke/tokyonight.nvim"
     use "gruvbox-community/gruvbox"
     use "rcarriga/nvim-notify"
 
@@ -51,6 +51,8 @@ return require("packer").startup(function(use)
 
     -- Data Science
     use { "dccsillag/magma-nvim", run = ":UpdateRemotePlugins" }
+    use "JuliaEditorSupport/julia-vim"
+    use "kdheepak/JuliaFormatter.vim"
 
     -- Use specific branch, dependency and run lua file after load
 	use {

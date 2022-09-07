@@ -1,5 +1,6 @@
 require('brasil.utils.reload')
 local nnoremap = require("brasil.utils.keymap").nnoremap
+local vnoremap = require('brasil.utils.keymap').vnoremap
 
 nnoremap("<leader>pv", ":Ex<CR>")
 
@@ -30,3 +31,7 @@ nnoremap("<C-l>", "<C-w>l")
 nnoremap("<leader>.", ":lcd %:p:h<CR>")
 nnoremap("<leader>e", ':e <C-R>=expand("%:p:h") . "\" <CR>')
 nnoremap("<leader>te", ':tabnew <C-R>=expand("%:p:h") . "\" <CR>')
+
+-- Lang specific
+nnoremap("<LocalLeader>jf", ":JuliaFormatterFormat<CR>")
+vnoremap("<LocalLeader>jf", ":JuliaFormatterFormat<CR>")

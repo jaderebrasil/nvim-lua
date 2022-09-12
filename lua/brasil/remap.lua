@@ -1,6 +1,7 @@
 require('brasil.utils.reload')
 local nnoremap = require("brasil.utils.keymap").nnoremap
 local vnoremap = require('brasil.utils.keymap').vnoremap
+local xnoremap = require("brasil.utils.keymap").xnoremap
 
 nnoremap("<leader>pv", ":Ex<CR>")
 
@@ -35,3 +36,9 @@ nnoremap("<leader>te", ':tabnew <C-R>=expand("%:p:h") . "\" <CR>')
 -- Lang specific
 nnoremap("<LocalLeader>jf", ":JuliaFormatterFormat<CR>")
 vnoremap("<LocalLeader>jf", ":JuliaFormatterFormat<CR>")
+
+-- delete to record _ (means it's gone)
+-- this means, when we select (v/vi) and paste with <leader>p
+-- everything we select is permanently deleted and the record
+-- still has the same thing before pasting into it.
+xnoremap("<leader>p", "\"_dP")

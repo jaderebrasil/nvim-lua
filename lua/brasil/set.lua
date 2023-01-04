@@ -35,3 +35,7 @@ vim.g.vimtex_view_general_options = '-reuse-instance -forward-search @tex @line 
 vim.g.autopep8_on_save = 1
 vim.g.autopep8_diff_type = 'vertical'
 vim.g.autopep8_disable_show_diff = 1
+
+-- theme
+vim.opt.guifont = {"DroidSansMono NF", ":h14"}
+vim.cmd[[colorscheme gruvbox]]

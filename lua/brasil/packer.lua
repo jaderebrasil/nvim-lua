@@ -40,11 +40,12 @@ return require("packer").startup(function(use)
 
     -- use "williamboman/nvim-lsp-installer"
     use "onsails/lspkind-nvim"
-
     use "glepnir/lspsaga.nvim"
     use "simrat39/symbols-outline.nvim"
-    use "L3MON4D3/LuaSnip"
+    use {"L3MON4D3/LuaSnip", tag = "v<CurrentMajor>.*"}
     use "saadparwaiz1/cmp_luasnip"
+
+
 
     use {"nvim-treesitter/nvim-treesitter", run = ":TSUpdate"}
     use "nvim-treesitter/playground"

@@ -42,7 +42,7 @@ return require("packer").startup(function(use)
     use "onsails/lspkind-nvim"
     use "glepnir/lspsaga.nvim"
     use "simrat39/symbols-outline.nvim"
-    use {"L3MON4D3/LuaSnip", tag = "v<CurrentMajor>.*"}
+    use "L3MON4D3/LuaSnip"
     use "saadparwaiz1/cmp_luasnip"
 
 

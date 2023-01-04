@@ -42,3 +42,13 @@ vnoremap("<LocalLeader>jf", ":JuliaFormatterFormat<CR>")
 -- everything we select is permanently deleted and the record
 -- still has the same thing before pasting into it.
 xnoremap("<leader>p", "\"_dP")
+
+function Neovide_fullscreen()
+    if vim.g.neovide_fullscreen then
+        vim.g.neovide_fullscreen = false
+    else
+        vim.g.neovide_fullscreen = true
+    end
+end
+
+nnoremap("<F11>", ":lua Neovide_fullscreen()<CR>")

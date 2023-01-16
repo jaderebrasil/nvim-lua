@@ -1,3 +1,5 @@
+local notify = require('notify')
+
 vim.o.clipboard = "unnamedplus"
 vim.o.mouse = "a"
 vim.g.mapleader = " "
@@ -39,3 +41,4 @@ vim.g.autopep8_disable_show_diff = 1
 -- theme
 vim.opt.guifont = {"DroidSansMono NF", ":h14"}
 vim.cmd[[colorscheme gruvbox]]
+vim.notify = notify

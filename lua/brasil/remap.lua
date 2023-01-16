@@ -43,12 +43,6 @@ vnoremap("<LocalLeader>jf", ":JuliaFormatterFormat<CR>")
 -- still has the same thing before pasting into it.
 xnoremap("<leader>p", "\"_dP")
 
-function Neovide_fullscreen()
-    if vim.g.neovide_fullscreen then
-        vim.g.neovide_fullscreen = false
-    else
-        vim.g.neovide_fullscreen = true
-    end
-end
-
 nnoremap("<F11>", ":lua Neovide_fullscreen()<CR>")
+nnoremap("<C-Right>", ":lua Neovide_fontsize(\"+1\")<CR>")
+nnoremap("<C-Left>", ":lua Neovide_fontsize(\"-1\")<CR>")

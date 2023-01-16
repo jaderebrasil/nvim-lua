@@ -7,3 +7,4 @@ require("brasil.autoremspaces")
 
 -- My plugins
 require("brasil.jupyter")
+require("brasil.neovide")

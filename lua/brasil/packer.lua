@@ -47,7 +47,7 @@ return require("packer").startup(function(use)
 
 
 
-    -- use {"nvim-treesitter/nvim-treesitter", run = ":TSUpdate"}
+    use {"nvim-treesitter/nvim-treesitter"} -- , run = ":TSUpdate"
     use "nvim-treesitter/playground"
     use "romgrk/nvim-treesitter-context"
 
@@ -71,4 +71,16 @@ return require("packer").startup(function(use)
         config = function() require("brasil.statusline") end,
         requires = {'kyazdani42/nvim-web-devicons', opt=true}
 	}
+
+    use {
+      'mrcjkb/haskell-tools.nvim',
+      requires = {
+        'neovim/nvim-lspconfig',
+        'nvim-lua/plenary.nvim',
+        'nvim-telescope/telescope.nvim', -- optional
+      },
+      -- tag = 'x.y.z' -- [^1]
+    }
+
+    use 'fatih/vim-go'
 end)

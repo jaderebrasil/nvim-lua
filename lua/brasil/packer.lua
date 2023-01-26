@@ -72,15 +72,15 @@ return require("packer").startup(function(use)
         requires = {'kyazdani42/nvim-web-devicons', opt=true}
 	}
 
-    use {
-      'mrcjkb/haskell-tools.nvim',
-      requires = {
-        'neovim/nvim-lspconfig',
-        'nvim-lua/plenary.nvim',
-        'nvim-telescope/telescope.nvim', -- optional
-      },
-      -- tag = 'x.y.z' -- [^1]
-    }
+    -- use {
+    --   'mrcjkb/haskell-tools.nvim',
+    --   requires = {
+    --     'neovim/nvim-lspconfig',
+    --     'nvim-lua/plenary.nvim',
+    --     'nvim-telescope/telescope.nvim', -- optional
+    --   },
+    --   -- tag = 'x.y.z' -- [^1]
+    -- }
 
     use 'fatih/vim-go'
 end)
